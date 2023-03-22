@@ -1,0 +1,86 @@
+/* image feed container */
+
+.postContainer{
+    height: 80%;
+    width: 70%;
+    padding: 10px;
+    margin-left:10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+     align-items: center; 
+     position: absolute;
+   font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    
+}
+
+
+.postContainer img{
+    width: 70%;
+    height: 70%;
+
+    align-content: center;
+    
+
+}
+
+/* post heading css */
+.postContainer .title{
+    align-self:flex-start;
+    margin-left: 11%;
+    margin-bottom: 1%;
+    color:#13010b;
+    display: inline;
+    padding-right: 5px;
+    word-wrap: break-word;
+    text-align: center;
+    width: 80%;
+    
+font-family: 'Roboto', sans-serif;
+ 
+}
+.upvotes{
+    display: flex;
+    flex-direction: column;
+    background-color: #dadfeb;
+    width: 10%;
+    padding: 1%;
+}
+
+.upvotes span{
+    display: flex;
+    margin-top: 10px;
+    
+}
+.upvotes span p{
+    margin-top: 8%;
+    margin-left: 7%;
+}
+@media only screen and
+(max-width : 1011px) {
+    .postContainer{
+        border: none;
+        margin-left: 0%;
+    }
+
+    .upvotes{
+        position: absolute;
+        top: 100%;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        border: 2px solid rgb(211, 229, 16);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .upvotes span{
+        margin-left: 10%;
+        justify-content: space-around;
+    }
+    article{
+        margin-top: 30px;
+    }
+
+}
+
