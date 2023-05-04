@@ -6,6 +6,7 @@ import SignUp from "./components/signInUp/SignUp";
 import { useDispatch, useSelector } from "react-redux";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -17,13 +18,14 @@ const App = () => {
         <Header />
 
         <Routes>
-          <Route path="/signin" element={<SignIn />} />
+          <Route path="/SignIn" element={<SignIn />} />
         </Routes>
         <Routes>
           <Route path="/register" element={<SignUp />} />
         </Routes>
         {user && <Main />}
         <ToastContainer />
+        <Footer/>
 
       </Router>
 

@@ -12,7 +12,7 @@ const SignUp = () => {
   const navigate = useNavigate();
 
   const showToastMessage = () => {
-    toast.success("Account is Created !", {
+    toast.success("Account Created Sucessfully!", {
       position: toast.POSITION.TOP_RIGHT,
     });
   };
